@@ -1,0 +1,19 @@
+/*gris claro, menu y footer*/
+.bg-gris-claro{
+	background-color: #EEE;
+}
+/*gris oscuro, active*/
+.bg-gris{
+	background-color: #514949;
+}
+.bg-rojo{
+	background-color: #E48080;
+}
+/*borde blanco de titulo*/
+.borde-blanco{
+	border: 1px solid #fff;
+}
+/*escalar imagen*/
+.escalar-img:hover{
+	transform: scale(.8);
+}

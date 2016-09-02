@@ -11,7 +11,7 @@
 	<body>
 		<div class="container-fluid">
 			<header><!--inicio de menu-->
-				<div class="row"><!--menu de idioma, cuenta-->
+				<div class="row bg-gris-claro"><!--menu de idioma, cuenta-->
 					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 						<p>Default Welcome Msg!</p>
 					</div>
@@ -48,46 +48,73 @@
 					</div>
 				</div><!--menu de idioma, cuenta-->
 				<div class="row"><!--menu de logo y buscar-->
-					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><!--hora de abierto-->
 						<span class="fa fa-clock-o fa-3x" aria-hidden="true"></span>
 						<h3>OPENING TIME</h3>
 						<small>9:00 AM - 10:00 PM</small>
 					</div>
 					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-						<img src="images/logo.png" class="img-responsive" alt="logo">
+						<img src="images/logo.png" class="img-responsive" alt="logo"><!--logo principal-->
 					</div>
 					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-						<input type="search" placeholder="Search">
-						<span class="fa fa-search" aria-hidden="true"></span>
+						<form>
+							<div class="form-group col-xs-12""><!--input de buscar-->
+								<span class="fa fa-search" aria-hidden="true"></span>
+								<input type="search" class="form-control" placeholder="Search">
+							</div>
+						</form>
 					</div>
 				</div><!--menu de logo y buscar-->
-				<nav class="navbar navbar-default"><!--inicio navegador principal-->
-					<div class="container-fluid">
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mi-menu">
-								<span class="sr-only">Mi-Menu</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-							<a href="#" class="navbar-right">My Cart</a>
-						</div>
-						<div class="collapse navbar-collapse" id="mi-menu">
-							<ul class="nav navbar-nav">
-								<li><a class="active" href="#">HOME</a></li>
-								<li><a href="contacto.html">CONTACT US</a></li>
-								<li><a href="#">My Cart</a></li>
-							</ul>
-						</div>
+				<nav class="navbar bg-gris-claro"><!--inicio navegador principal-->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mi-menu">
+							<span class="sr-only">Mi-Menu</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse" id="mi-menu">
+						<ul class="nav navbar-nav">
+							<li><a class="bg-rojo" href="#">HOME</a></li>
+							<li><a href="contacto.html">CONTACT US</a></li>							
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<a href="#" class="fa fa-shopping-cart bg-gris"> My Cart <br><small>2 item(s)-$244.00</small></a>
+							</li>
+						</ul>
 					</div>
 				</nav><!--fin navegador principal-->
 			</header><!--fin de menu-->
 			<section><!--inicio seccion de imagen con slider-->
 				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-						<h1>AUTUM/WINTER LOOKBOOK</h1>
-						<p>- 2016 COLLECTION -</p>
-						<!--falta caudro de la derecha-->
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bg-img-one">			
+						<div id="slider" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#slider" data-slide-to="0" class="active"></li><!--circulo que se ven cuando cambia imagen-->
+								<li data-target="#slider" data-slide-to="1"></li><!--circulo que se ven cuando cambia imagen-->
+							</ol>
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<img src="images/slider1.jpg" alt="slider1"><!--imagen1 de carrusel-->
+									<div class="carousel-caption"><!--titulo-->
+										<h1 class="borde-blanco">AUTUM/WINTER LOOKBOOK</h1>
+										<h4>- 2016 COLLECTION -</h4>
+									</div>
+								</div>
+							<div class="item">
+								<img src="images/slider2.jpg" alt="slider2"><!--imagen2 de carrusel-->
+							</div>
+							<a class="left carousel-control" href="#slider" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#slider" role="button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
 					</div>
 				</div>
 			</section><!--fin seccion de imagen con slider-->
@@ -113,7 +140,7 @@
 					<div class="row"><!--inicio catalogo 1-->
 						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
 							<div class="thumbnail">
-								<img src="images/a1.jpg" alt="guantes">
+								<img src="images/a1.jpg" class="escalar-img" alt="guantes">
 								<p>Deliver wide</p>
 								<span class="fa fa-star" aria-hidden="true"></span>
 								<span class="fa fa-star" aria-hidden="true"></span>
@@ -126,7 +153,7 @@
 						</div>
 						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
 							<div class="thumbnail">
-								<img src="images/b1.jpg" alt="gorra">
+								<img src="images/b1.jpg" class="escalar-img" alt="gorra">
 								<p>Deliver wide</p>
 								<span class="fa fa-star" aria-hidden="true"></span>
 								<span class="fa fa-star" aria-hidden="true"></span>
@@ -138,7 +165,7 @@
 						</div>
 						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
 							<div class="thumbnail">
-								<img src="images/c1.jpg" alt="mochila">
+								<img src="images/c1.jpg" class="escalar-img" alt="mochila">
 								<p>Deliver wide</p>
 								<span class="fa fa-star" aria-hidden="true"></span>
 								<span class="fa fa-star" aria-hidden="true"></span>
@@ -150,7 +177,7 @@
 						</div>
 						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
 							<div class="thumbnail">
-								<img src="images/d1.jpg" alt="bolsa">
+								<img src="images/d1.jpg" class="escalar-img" alt="bolsa">
 								<p>Deliver wide</p>
 								<span class="fa fa-star" aria-hidden="true"></span>
 								<span class="fa fa-star" aria-hidden="true"></span>
@@ -376,7 +403,7 @@
 			</section><!--fin seccion blog con 4 imagenes-->
 			<footer>
 				<div class="container-fluid">
-					<div class="row"><!--inicio footer con enlaces-->
+					<div class="row bg-gris-claro"><!--inicio footer con enlaces-->
 						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><!--inicio accessories-->
 							<h4>ACCESORIES</h4>
 							<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, reprehenderit, cumque? Quis dolor earum accusamus, nam quo dignissimos tempora porro esse voluptates, reprehenderit repudiandae sed incidunt doloribus hic ab, quas.</p>
